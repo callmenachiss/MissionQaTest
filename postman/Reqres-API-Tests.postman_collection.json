@@ -1,0 +1,334 @@
+{
+  "info": {
+    "name": "Reqres API Tests",
+    "description": "Mirrors the scenarios in src/test/java/API-Test.feature so you can manually run/inspect the same calls the automation makes. Each request carries a Tests script asserting the same conditions ReqresAssertions.java checks.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "https://reqres.in"
+    },
+    {
+      "key": "api_key",
+      "value": "free_user_3FynKJdBBT0XkVl6EsU0jZvC2Of"
+    }
+  ],
+  "item": [
+    {
+      "name": "List Users",
+      "item": [
+        {
+          "name": "List Users - Page 1",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Response has total and total_pages', () => {",
+                  "    const body = pm.response.json();",
+                  "    pm.expect(body.total).to.be.a('number');",
+                  "    pm.expect(body.total_pages).to.be.a('number');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users?page=1",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"],
+              "query": [{ "key": "page", "value": "1" }]
+            },
+            "description": "Scenario: Should see LIST USERS of all existing users (Given step)"
+          }
+        },
+        {
+          "name": "List Users - Page 2",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Response contains a data array', () => {",
+                  "    pm.expect(pm.response.json().data).to.be.an('array');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users?page=2",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"],
+              "query": [{ "key": "page", "value": "2" }]
+            },
+            "description": "Scenario: Should see LIST USERS of all existing users (When step - remaining pages)"
+          }
+        },
+        {
+          "name": "List Users - Delayed Response",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Every user id is unique', () => {",
+                  "    const ids = pm.response.json().data.map((user) => user.id);",
+                  "    const uniqueIds = new Set(ids);",
+                  "    pm.expect(uniqueIds.size).to.eql(ids.length);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users?delay=3",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"],
+              "query": [{ "key": "delay", "value": "3" }]
+            },
+            "description": "Scenario: Should see the list of users with DELAYED RESPONSE"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Single User",
+      "item": [
+        {
+          "name": "Single User - Found",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+                  "pm.test('User data matches Emma', () => {",
+                  "    const data = pm.response.json().data;",
+                  "    pm.expect(data.first_name).to.eql('Emma');",
+                  "    pm.expect(data.email).to.eql('emma.wong@reqres.in');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users/3",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "3"]
+            },
+            "description": "Scenario: Should see SINGLE USER data (expects first_name=Emma, email=emma.wong@reqres.in)"
+          }
+        },
+        {
+          "name": "Single User - Not Found",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 404', () => pm.response.to.have.status(404));"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" }
+            ],
+            "url": {
+              "raw": "{{base_url}}/api/users/55",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users", "55"]
+            },
+            "description": "Scenario: Should see SINGLE USER NOT FOUND error code (expects 404)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Create User",
+      "item": [
+        {
+          "name": "Create User - Peter Manager",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 201', () => pm.response.to.have.status(201));",
+                  "pm.test('Created user matches request payload', () => {",
+                  "    const body = pm.response.json();",
+                  "    pm.expect(body.name).to.eql('Peter');",
+                  "    pm.expect(body.job).to.eql('Manager');",
+                  "    pm.expect(body.id).to.exist;",
+                  "    pm.expect(body.createdAt).to.exist;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Peter\",\n  \"job\": \"Manager\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Scenario Outline: CREATE a user (expects 201, response echoes name/job plus id and createdAt)"
+          }
+        },
+        {
+          "name": "Create User - Liza Sales",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 201', () => pm.response.to.have.status(201));",
+                  "pm.test('Created user matches request payload', () => {",
+                  "    const body = pm.response.json();",
+                  "    pm.expect(body.name).to.eql('Liza');",
+                  "    pm.expect(body.job).to.eql('Sales');",
+                  "    pm.expect(body.id).to.exist;",
+                  "    pm.expect(body.createdAt).to.exist;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Liza\",\n  \"job\": \"Sales\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/users",
+              "host": ["{{base_url}}"],
+              "path": ["api", "users"]
+            },
+            "description": "Scenario Outline: CREATE a user (expects 201, response echoes name/job plus id and createdAt)"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Login",
+      "item": [
+        {
+          "name": "Login - Successful",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 200', () => pm.response.to.have.status(200));",
+                  "pm.test('Response contains a token', () => {",
+                  "    pm.expect(pm.response.json().token).to.exist;",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"eve.holt@reqres.in\",\n  \"password\": \"cityslicka\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/login",
+              "host": ["{{base_url}}"],
+              "path": ["api", "login"]
+            },
+            "description": "Scenario: LOGIN - SUCCESSFUL by a user (expects 200)"
+          }
+        },
+        {
+          "name": "Login - Unsuccessful",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test('Status code is 400', () => pm.response.to.have.status(400));",
+                  "pm.test('Error message is Missing password', () => {",
+                  "    pm.expect(pm.response.json().error).to.eql('Missing password');",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "request": {
+            "method": "POST",
+            "header": [
+              { "key": "x-api-key", "value": "{{api_key}}" },
+              { "key": "Content-Type", "value": "application/json" }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"eve.holt@reqres.in\"\n}"
+            },
+            "url": {
+              "raw": "{{base_url}}/api/login",
+              "host": ["{{base_url}}"],
+              "path": ["api", "login"]
+            },
+            "description": "Scenario: LOGIN - UNSUCCESSFUL by a user (expects 400, error: 'Missing password')"
+          }
+        }
+      ]
+    }
+  ]
+}
