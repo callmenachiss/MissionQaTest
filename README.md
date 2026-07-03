@@ -50,7 +50,7 @@ The following folder `src/main/java/AutomationTest/mission` contains the followi
    - Captured logs in `target/surefire-reports/AutomationTest.mission.runner.RunnerTest-output.txt`.
    - Captured screenshots for Failure scenarios in `target/screenshots/`.
    - Created postman collection for manual execution `postman/Reqres-API-Tests.postman_collection.json`.
-   - Pushed my implementation into github repo.
+   - Pushed my implementation into github repo `https://github.com/callmenachiss/MissionQaTest`.
    - Now all UI and API test cases are passing.
    - And I have added configuration to support below execution ways.
    - Execution through Green run button in scenario itself.
