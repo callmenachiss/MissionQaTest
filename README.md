@@ -43,7 +43,7 @@ The following folder `src/main/java/AutomationTest/mission` contains the followi
     - Alternatively, we can run `testng.xml` from IDE after downloading the dependencies
     - Result will be captured in `test-output` folder
 
------------------------------------------------------------------------------------------------------->
+
 ## Execution Results by --- Nachiyappan Karuppiah
    - I have fixed all the gaps in this framework.
    - Added reporting structure under `test-output/cucumber-reports/cucumber-pretty/index.html`.
@@ -55,7 +55,6 @@ The following folder `src/main/java/AutomationTest/mission` contains the followi
    - And I have added configuration to support below execution ways.
    - Execution through Green run button in scenario itself.
    - Execution through `testng.xml` also supported in this project.
-   - Execution through `mvn clean test` command also supported in this project.
-------------------------------------------------------------------------------------------------------->    
+   - Execution through `mvn clean test` command also supported in this project. 
 
 
