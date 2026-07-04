@@ -1,0 +1,114 @@
+
+@API
+Scenario: Should see LIST USERS of all existing users                 # src/test/java/API-Test.feature:5
+[API] Page 1 fetched - total users: 12, total pages: 2
+  ✔ Given I get the default list of users for on 1st page             # AutomationTest.mission.steps.ApiSteps.getDefaultListOfUsers(int)
+[API] Page 2 fetched - user ids collected so far: 12
+  ✔ When I get the list of all users within every page                # AutomationTest.mission.steps.ApiSteps.getUsersFromEveryPage()
+[API] Total users reported by API: 12, user ids collected: 12
+  ✔ Then I should see total users count equals the number of user ids # AutomationTest.mission.steps.ApiSteps.totalUsersShouldMatchCollectedIds()
+
+@API
+Scenario: Should see SINGLE USER data         # src/test/java/API-Test.feature:11
+[API] Searched for user id 3 - response status: 200
+  ✔ Given I make a search for user 3          # AutomationTest.mission.steps.ApiSteps.searchForUser(java.lang.String)
+[API] User returned - first_name: Emma, email: emma.wong@reqres.in
+  ✔ Then I should see the following user data # AutomationTest.mission.steps.ApiSteps.userDataShouldMatch(io.cucumber.datatable.DataTable)
+      | first_name | email               |
+      | Emma       | emma.wong@reqres.in |
+
+@API
+Scenario: Should see SINGLE USER NOT FOUND error code # src/test/java/API-Test.feature:18
+[API] Searched for user id 55 - response status: 404
+  ✔ Given I make a search for user 55                 # AutomationTest.mission.steps.ApiSteps.searchForUser(java.lang.String)
+[API] Response status code: 404 (expected 404)
+  ✔ Then I receive error code 404 in response         # AutomationTest.mission.steps.ApiSteps.responseCodeShouldBe(int)
+
+@API
+Scenario Outline: CREATE a user                        # src/test/java/API-Test.feature:30
+[API] Create user request sent - name: Peter, job: Manager
+  ✔ Given I create a user with following Peter Manager # AutomationTest.mission.steps.ApiSteps.createUser(java.lang.String,java.lang.String)
+[API] User created - id: 952, name: Peter, job: Manager, createdAt: 2026-07-04T07:56:20.189Z
+  ✔ Then response should contain the following data    # AutomationTest.mission.steps.ApiSteps.createdResponseShouldContainExpectedData(io.cucumber.datatable.DataTable)
+      | name | job | id | createdAt |
+
+@API
+Scenario Outline: CREATE a user                     # src/test/java/API-Test.feature:31
+[API] Create user request sent - name: Liza, job: Sales
+  ✔ Given I create a user with following Liza Sales # AutomationTest.mission.steps.ApiSteps.createUser(java.lang.String,java.lang.String)
+[API] User created - id: 695, name: Liza, job: Sales, createdAt: 2026-07-04T07:56:20.697Z
+  ✔ Then response should contain the following data # AutomationTest.mission.steps.ApiSteps.createdResponseShouldContainExpectedData(io.cucumber.datatable.DataTable)
+      | name | job | id | createdAt |
+
+@API
+Scenario: LOGIN - SUCCESSFUL by a user                   # src/test/java/API-Test.feature:34
+[API] Login attempted - email: eve.holt@reqres.in
+  ✔ Given I login unsuccessfully with the following data # AutomationTest.mission.steps.ApiSteps.loginWithData(io.cucumber.datatable.DataTable)
+      | Email              | Password   |
+      | eve.holt@reqres.in | cityslicka |
+[API] Login response status code: 200 (expected 200)
+  ✔ Then I should get a response code of 200             # AutomationTest.mission.steps.ApiSteps.loginResponseCodeShouldBe(int)
+
+@API
+Scenario: LOGIN - UNSUCCESSFUL by a user                 # src/test/java/API-Test.feature:40
+[API] Login attempted - email: eve.holt@reqres.in
+  ✔ Given I login unsuccessfully with the following data # AutomationTest.mission.steps.ApiSteps.loginWithData(io.cucumber.datatable.DataTable)
+      | Email              | Password |
+      | eve.holt@reqres.in |          |
+[API] Login response status code: 400 (expected 400)
+  ✔ Then I should get a response code of 400             # AutomationTest.mission.steps.ApiSteps.loginResponseCodeShouldBe(int)
+[API] Login error message returned: Missing password
+  ✔ And I should see the following response message:     # AutomationTest.mission.steps.ApiSteps.responseMessageShouldMatch(io.cucumber.datatable.DataTable)
+      | "error": "Missing password" |
+
+@API
+Scenario: Should see the list of users with DELAYED RESPONSE # src/test/java/API-Test.feature:48
+[API] Requesting user list with a 3-second artificial delay...
+[API] Delayed response received - status: 200
+  ✔ Given I wait for the user list to load                   # AutomationTest.mission.steps.ApiSteps.waitForUserListToLoad()
+[API] User ids returned: [1, 2, 3, 4, 5, 6]
+  ✔ Then I should see that every user has a unique id        # AutomationTest.mission.steps.ApiSteps.everyUserShouldHaveUniqueId()
+
+@UI
+Scenario: Check item total cost and tax                             # src/test/java/UI-Test.feature:5
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 150.0.7871.46 (resolved driver for Chrome 150)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\nachi\.cache\selenium\chromedriver\win64\150.0.7871.46\chromedriver.exe
+Jul 04, 2026 1:29:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+[UI] Opened home page: https://www.saucedemo.com/
+  ✔ Given I am on the home page                                     # AutomationTest.mission.steps.UiSteps.openHomePage()
+[UI] Logged in as: standard_user
+  ✔ And I login in with the following details                       # AutomationTest.mission.steps.UiSteps.loginWithDetails(io.cucumber.datatable.DataTable)
+      | userName      | Password     |
+      | standard_user | secret_sauce |
+[UI] Added to cart: [Sauce Labs Backpack, Sauce Labs Fleece Jacket, Sauce Labs Bolt T-Shirt, Sauce Labs Onesie]
+  ✔ And I add the following items to the basket                     # AutomationTest.mission.steps.UiSteps.addItemsToBasket(io.cucumber.datatable.DataTable)
+      | Sauce Labs Backpack      |
+      | Sauce Labs Fleece Jacket |
+      | Sauce Labs Bolt T-Shirt  |
+      | Sauce Labs Onesie        |
+[UI] Shopping cart count: 4 (expected 4)
+  ✔ And I  should see 4 items added to the shopping cart            # AutomationTest.mission.steps.UiSteps.shoppingCartCountShouldBe(int)
+[UI] Opened shopping cart
+  ✔ And I click on the shopping cart                                # AutomationTest.mission.steps.UiSteps.openShoppingCart()
+[UI] Cart item quantities: [1, 1, 1, 1] (expected each to be 1)
+  ✔ And I verify that the QTY count for each item should be 1       # AutomationTest.mission.steps.UiSteps.quantityForEachItemShouldBe(int)
+[UI] Removed from cart: [Sauce Labs Fleece Jacket]
+  ✔ And I remove the following item:                                # AutomationTest.mission.steps.UiSteps.removeItems(io.cucumber.datatable.DataTable)
+      | Sauce Labs Fleece Jacket |
+[UI] Shopping cart count: 3 (expected 3)
+  ✔ And I  should see 3 items added to the shopping cart            # AutomationTest.mission.steps.UiSteps.shoppingCartCountShouldBe(int)
+[UI] Navigated to checkout information page
+  ✔ And I click on the CHECKOUT button                              # AutomationTest.mission.steps.UiSteps.clickCheckout()
+[UI] Entered First Name: FirstName
+  ✔ And I type "FirstName" for First Name                           # AutomationTest.mission.steps.UiSteps.typeFirstName(java.lang.String)
+[UI] Entered Last Name: LastName
+  ✔ And I type "LastName" for Last Name                             # AutomationTest.mission.steps.UiSteps.typeLastName(java.lang.String)
+[UI] Entered ZIP/Postal Code: EC1A 9JU
+  ✔ And I type "EC1A 9JU" for ZIP/Postal Code                       # AutomationTest.mission.steps.UiSteps.typePostalCode(java.lang.String)
+[UI] Navigated to checkout overview page
+  ✔ When I click on the CONTINUE button                             # AutomationTest.mission.steps.UiSteps.continueToOverview()
+[UI] Listed item prices: [29.99, 15.99, 7.99], expected total: 53.97, displayed total: 53.97
+  ✔ Then Item total will be equal to the total of items on the list # AutomationTest.mission.steps.UiSteps.itemTotalShouldMatchListedItems()
+[UI] Item total: 53.97, expected tax (8%): 4.32, displayed tax: 4.32, expected grand total: 58.29, displayed grand total: 58.29
+  ✔ And a Tax rate of 8 % is applied to the total                   # AutomationTest.mission.steps.UiSteps.taxRateShouldBeApplied(int)

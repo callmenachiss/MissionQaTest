@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testng-results failed="0" passed="9" skipped="0" total="9">
+    <suite duration-ms="45004" name="cucumber.runtime.formatter.TestNGFormatter">
+        <test duration-ms="45004" name="cucumber.runtime.formatter.TestNGFormatter">
+            <class name="API test">
+                <test-method duration-ms="1986" finished-at="2026-07-03T11:59:39Z" name="Should see LIST USERS of all existing users" started-at="2026-07-03T11:59:37Z" status="PASS"/>
+                <test-method duration-ms="418" finished-at="2026-07-03T11:59:39Z" name="Should see SINGLE USER data" started-at="2026-07-03T11:59:39Z" status="PASS"/>
+                <test-method duration-ms="381" finished-at="2026-07-03T11:59:39Z" name="Should see SINGLE USER NOT FOUND error code" started-at="2026-07-03T11:59:39Z" status="PASS"/>
+                <test-method duration-ms="430" finished-at="2026-07-03T11:59:40Z" name="CREATE a user" started-at="2026-07-03T11:59:39Z" status="PASS"/>
+                <test-method duration-ms="268" finished-at="2026-07-03T11:59:40Z" name="CREATE a user_2" started-at="2026-07-03T11:59:40Z" status="PASS"/>
+                <test-method duration-ms="249" finished-at="2026-07-03T11:59:40Z" name="LOGIN - SUCCESSFUL by a user" started-at="2026-07-03T11:59:40Z" status="PASS"/>
+                <test-method duration-ms="254" finished-at="2026-07-03T11:59:41Z" name="LOGIN - UNSUCCESSFUL by a user" started-at="2026-07-03T11:59:40Z" status="PASS"/>
+                <test-method duration-ms="3238" finished-at="2026-07-03T11:59:44Z" name="Should see the list of users with DELAYED RESPONSE" started-at="2026-07-03T11:59:41Z" status="PASS"/>
+            </class>
+            <class name="Checkout items in the basket">
+                <test-method duration-ms="37780" finished-at="2026-07-03T12:00:22Z" name="Check item total cost and tax" started-at="2026-07-03T11:59:44Z" status="PASS"/>
+            </class>
+        </test>
+    </suite>
+</testng-results>

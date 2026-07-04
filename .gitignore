@@ -1,7 +1,3 @@
-target/
-test-output/
-Screenshots/
 .playwright-cli/
 *.class
-*.log
 .DS_Store

@@ -1,0 +1,5 @@
+AutomationTest\mission\steps\ApiSteps.class
+AutomationTest\mission\steps\UiSteps.class
+AutomationTest\mission\api\ReqresAssertions.class
+AutomationTest\mission\runner\RunnerTest.class
+AutomationTest\mission\hooks\Hook.class

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="AutomationTest.mission.runner.RunnerTest" time="57.402" tests="9" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="22"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\nachi\.cache\selenium\chromedriver\win64\150.0.7871.46\chromedriver.exe"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="E:\d\MissionQaTest-master\target\test-classes;E:\d\MissionQaTest-master\target\classes;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\nachi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\nachi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\nachi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\nachi\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\nachi\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-java\7.31.0\cucumber-java-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-core\7.31.0\cucumber-core-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-gherkin\7.31.0\cucumber-gherkin-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.31.0\cucumber-gherkin-messages-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\gherkin\36.0.0\gherkin-36.0.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\pretty-formatter\2.4.0\pretty-formatter-2.4.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\tag-expressions\8.0.0\tag-expressions-8.0.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.0\cucumber-json-formatter-0.3.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\datatable\7.31.0\datatable-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-plugin\7.31.0\cucumber-plugin-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\docstring\7.31.0\docstring-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\html-formatter\22.0.0\html-formatter-22.0.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\junit-xml-formatter\0.10.0\junit-xml-formatter-0.10.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\nachi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-testng\7.31.0\cucumber-testng-7.31.0.jar;C:\Users\nachi\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\nachi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\nachi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\nachi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\nachi\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\nachi\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\nachi\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\nachi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\nachi\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\nachi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nachi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\nachi\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\nachi\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\nachi\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\nachi\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\nachi\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\nachi\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\nachi\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\nachi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\nachi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\nachi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\nachi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\nachi\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\nachi\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\nachi\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\nachi\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\nachi\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\nachi\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\nachi\AppData\Local\Temp\surefire16140413822951523157\surefirebooter-20260704132921595_3.jar C:\Users\nachi\AppData\Local\Temp\surefire16140413822951523157 2026-07-04T13-29-20_844-jvmRun1 surefire-20260704132921595_1tmp surefire_0-20260704132921595_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="E:\d\MissionQaTest-master\target\test-classes;E:\d\MissionQaTest-master\target\classes;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-java\4.45.0\selenium-java-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-api\4.45.0\selenium-api-4.45.0.jar;C:\Users\nachi\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.45.0\selenium-chrome-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.45.0\selenium-chromium-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-json\4.45.0\selenium-json-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.45.0\selenium-manager-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-latest\4.45.0\selenium-devtools-latest-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v147\4.45.0\selenium-devtools-v147-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v148\4.45.0\selenium-devtools-v148-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v149\4.45.0\selenium-devtools-v149-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.45.0\selenium-edge-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.45.0\selenium-firefox-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-http\4.45.0\selenium-http-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.45.0\selenium-ie-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.45.0\selenium-remote-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\com\google\guava\guava\33.6.0-jre\guava-33.6.0-jre.jar;C:\Users\nachi\.m2\repository\com\google\guava\failureaccess\1.0.3\failureaccess-1.0.3.jar;C:\Users\nachi\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\nachi\.m2\repository\com\google\j2objc\j2objc-annotations\3.1\j2objc-annotations-3.1.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-api\1.63.0\opentelemetry-api-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-context\1.63.0\opentelemetry-context-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-common\1.63.0\opentelemetry-common-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.63.0\opentelemetry-exporter-logging-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.63.0\opentelemetry-sdk-common-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.63.0\opentelemetry-sdk-extension-autoconfigure-spi-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.63.0\opentelemetry-sdk-extension-autoconfigure-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.63.0\opentelemetry-sdk-trace-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.63.0\opentelemetry-sdk-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.63.0\opentelemetry-sdk-metrics-1.63.0.jar;C:\Users\nachi\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.63.0\opentelemetry-sdk-logs-1.63.0.jar;C:\Users\nachi\.m2\repository\net\bytebuddy\byte-buddy\1.18.10\byte-buddy-1.18.10.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-os\4.45.0\selenium-os-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.45.0\selenium-safari-driver-4.45.0.jar;C:\Users\nachi\.m2\repository\org\seleniumhq\selenium\selenium-support\4.45.0\selenium-support-4.45.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-java\7.31.0\cucumber-java-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-core\7.31.0\cucumber-core-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-gherkin\7.31.0\cucumber-gherkin-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.31.0\cucumber-gherkin-messages-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\gherkin\36.0.0\gherkin-36.0.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\messages\30.1.0\messages-30.1.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\pretty-formatter\2.4.0\pretty-formatter-2.4.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\query\14.7.0\query-14.7.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\teamcity-formatter\0.2.0\teamcity-formatter-0.2.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\testng-xml-formatter\0.7.0\testng-xml-formatter-0.7.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\usage-formatter\0.1.0\usage-formatter-0.1.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\tag-expressions\8.0.0\tag-expressions-8.0.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-json-formatter\0.3.0\cucumber-json-formatter-0.3.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\datatable\7.31.0\datatable-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-plugin\7.31.0\cucumber-plugin-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\docstring\7.31.0\docstring-7.31.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\html-formatter\22.0.0\html-formatter-22.0.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\junit-xml-formatter\0.10.0\junit-xml-formatter-0.10.0.jar;C:\Users\nachi\.m2\repository\io\cucumber\ci-environment\12.0.0\ci-environment-12.0.0.jar;C:\Users\nachi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nachi\.m2\repository\io\cucumber\cucumber-testng\7.31.0\cucumber-testng-7.31.0.jar;C:\Users\nachi\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\nachi\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\nachi\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\nachi\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\nachi\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\nachi\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\nachi\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\nachi\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\nachi\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\nachi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nachi\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\nachi\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\nachi\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\nachi\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\nachi\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\nachi\.m2\repository\io\github\bonigarcia\webdrivermanager\6.3.4\webdrivermanager-6.3.4.jar;C:\Users\nachi\.m2\repository\com\google\code\gson\gson\2.13.2\gson-2.13.2.jar;C:\Users\nachi\.m2\repository\com\google\errorprone\error_prone_annotations\2.41.0\error_prone_annotations-2.41.0.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java\3.7.1\docker-java-3.7.1.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-core\3.7.1\docker-java-core-3.7.1.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-api\3.7.1\docker-java-api-3.7.1.jar;C:\Users\nachi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.20\jackson-annotations-2.20.jar;C:\Users\nachi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.20.1\jackson-databind-2.20.1.jar;C:\Users\nachi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.20.1\jackson-core-2.20.1.jar;C:\Users\nachi\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.7.1\docker-java-transport-httpclient5-3.7.1.jar;C:\Users\nachi\.m2\repository\com\github\docker-java\docker-java-transport\3.7.1\docker-java-transport-3.7.1.jar;C:\Users\nachi\.m2\repository\net\java\dev\jna\jna\5.18.1\jna-5.18.1.jar;C:\Users\nachi\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\nachi\.m2\repository\org\apache\commons\commons-lang3\3.20.0\commons-lang3-3.20.0.jar;C:\Users\nachi\.m2\repository\org\apache\commons\commons-compress\1.28.0\commons-compress-1.28.0.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.6\httpclient5-5.6.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.4\httpcore5-5.4.jar;C:\Users\nachi\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.4\httpcore5-h2-5.4.jar;C:\Users\nachi\.m2\repository\commons-io\commons-io\2.20.0\commons-io-2.20.0.jar;C:\Users\nachi\.m2\repository\org\slf4j\slf4j-simple\2.0.17\slf4j-simple-2.0.17.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\nachi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-07-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="E:\d\MissionQaTest-master"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\nachi\AppData\Local\Temp\surefire16140413822951523157\surefirebooter-20260704132921595_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="22.0.2+9-70"/>
+    <property name="user.name" value="nachi"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\nachi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\nachi\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.2"/>
+    <property name="user.dir" value="E:\d\MissionQaTest-master"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\HP\HP One Agent;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\nachi\AppData\Local\Microsoft\WindowsApps;C:\Users\nachi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nachi\AppData\Roaming\npm;C:\Program Files\apache-maven-3.9.11-bin\apache-maven-3.9.11\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="22.0.2+9-70"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="66.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Should see LIST USERS of all existing users&quot;, &quot;API test&quot;](1)" classname="AutomationTest.mission.runner.RunnerTest" time="9.278">
+    <system-out><![CDATA[
+@API
+Scenario: Should see LIST USERS of all existing users                 # src/test/java/API-Test.feature:5
+[API] Page 1 fetched - total users: 12, total pages: 2
+  ✔ Given I get the default list of users for on 1st page             # AutomationTest.mission.steps.ApiSteps.getDefaultListOfUsers(int)
+[API] Page 2 fetched - user ids collected so far: 12
+  ✔ When I get the list of all users within every page                # AutomationTest.mission.steps.ApiSteps.getUsersFromEveryPage()
+[API] Total users reported by API: 12, user ids collected: 12
+  ✔ Then I should see total users count equals the number of user ids # AutomationTest.mission.steps.ApiSteps.totalUsersShouldMatchCollectedIds()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Should see SINGLE USER data&quot;, &quot;API test&quot;](2)" classname="AutomationTest.mission.runner.RunnerTest" time="0.574">
+    <system-out><![CDATA[
+@API
+Scenario: Should see SINGLE USER data         # src/test/java/API-Test.feature:11
+[API] Searched for user id 3 - response status: 200
+  ✔ Given I make a search for user 3          # AutomationTest.mission.steps.ApiSteps.searchForUser(java.lang.String)
+[API] User returned - first_name: Emma, email: emma.wong@reqres.in
+  ✔ Then I should see the following user data # AutomationTest.mission.steps.ApiSteps.userDataShouldMatch(io.cucumber.datatable.DataTable)
+      | first_name | email               |
+      | Emma       | emma.wong@reqres.in |
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Should see SINGLE USER NOT FOUND error code&quot;, &quot;API test&quot;](3)" classname="AutomationTest.mission.runner.RunnerTest" time="0.48">
+    <system-out><![CDATA[
+@API
+Scenario: Should see SINGLE USER NOT FOUND error code # src/test/java/API-Test.feature:18
+[API] Searched for user id 55 - response status: 404
+  ✔ Given I make a search for user 55                 # AutomationTest.mission.steps.ApiSteps.searchForUser(java.lang.String)
+[API] Response status code: 404 (expected 404)
+  ✔ Then I receive error code 404 in response         # AutomationTest.mission.steps.ApiSteps.responseCodeShouldBe(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;CREATE a user&quot;, &quot;API test&quot;](4)" classname="AutomationTest.mission.runner.RunnerTest" time="1.147">
+    <system-out><![CDATA[
+@API
+Scenario Outline: CREATE a user                        # src/test/java/API-Test.feature:30
+[API] Create user request sent - name: Peter, job: Manager
+  ✔ Given I create a user with following Peter Manager # AutomationTest.mission.steps.ApiSteps.createUser(java.lang.String,java.lang.String)
+[API] User created - id: 952, name: Peter, job: Manager, createdAt: 2026-07-04T07:56:20.189Z
+  ✔ Then response should contain the following data    # AutomationTest.mission.steps.ApiSteps.createdResponseShouldContainExpectedData(io.cucumber.datatable.DataTable)
+      | name | job | id | createdAt |
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;CREATE a user&quot;, &quot;API test&quot;](5)" classname="AutomationTest.mission.runner.RunnerTest" time="0.436">
+    <system-out><![CDATA[
+@API
+Scenario Outline: CREATE a user                     # src/test/java/API-Test.feature:31
+[API] Create user request sent - name: Liza, job: Sales
+  ✔ Given I create a user with following Liza Sales # AutomationTest.mission.steps.ApiSteps.createUser(java.lang.String,java.lang.String)
+[API] User created - id: 695, name: Liza, job: Sales, createdAt: 2026-07-04T07:56:20.697Z
+  ✔ Then response should contain the following data # AutomationTest.mission.steps.ApiSteps.createdResponseShouldContainExpectedData(io.cucumber.datatable.DataTable)
+      | name | job | id | createdAt |
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;LOGIN - SUCCESSFUL by a user&quot;, &quot;API test&quot;](6)" classname="AutomationTest.mission.runner.RunnerTest" time="0.433">
+    <system-out><![CDATA[
+@API
+Scenario: LOGIN - SUCCESSFUL by a user                   # src/test/java/API-Test.feature:34
+[API] Login attempted - email: eve.holt@reqres.in
+  ✔ Given I login unsuccessfully with the following data # AutomationTest.mission.steps.ApiSteps.loginWithData(io.cucumber.datatable.DataTable)
+      | Email              | Password   |
+      | eve.holt@reqres.in | cityslicka |
+[API] Login response status code: 200 (expected 200)
+  ✔ Then I should get a response code of 200             # AutomationTest.mission.steps.ApiSteps.loginResponseCodeShouldBe(int)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;LOGIN - UNSUCCESSFUL by a user&quot;, &quot;API test&quot;](7)" classname="AutomationTest.mission.runner.RunnerTest" time="0.399">
+    <system-out><![CDATA[
+@API
+Scenario: LOGIN - UNSUCCESSFUL by a user                 # src/test/java/API-Test.feature:40
+[API] Login attempted - email: eve.holt@reqres.in
+  ✔ Given I login unsuccessfully with the following data # AutomationTest.mission.steps.ApiSteps.loginWithData(io.cucumber.datatable.DataTable)
+      | Email              | Password |
+      | eve.holt@reqres.in |          |
+[API] Login response status code: 400 (expected 400)
+  ✔ Then I should get a response code of 400             # AutomationTest.mission.steps.ApiSteps.loginResponseCodeShouldBe(int)
+[API] Login error message returned: Missing password
+  ✔ And I should see the following response message:     # AutomationTest.mission.steps.ApiSteps.responseMessageShouldMatch(io.cucumber.datatable.DataTable)
+      | "error": "Missing password" |
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Should see the list of users with DELAYED RESPONSE&quot;, &quot;API test&quot;](8)" classname="AutomationTest.mission.runner.RunnerTest" time="3.273">
+    <system-out><![CDATA[
+@API
+Scenario: Should see the list of users with DELAYED RESPONSE # src/test/java/API-Test.feature:48
+[API] Requesting user list with a 3-second artificial delay...
+[API] Delayed response received - status: 200
+  ✔ Given I wait for the user list to load                   # AutomationTest.mission.steps.ApiSteps.waitForUserListToLoad()
+[API] User ids returned: [1, 2, 3, 4, 5, 6]
+  ✔ Then I should see that every user has a unique id        # AutomationTest.mission.steps.ApiSteps.everyUserShouldHaveUniqueId()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Check item total cost and tax&quot;, &quot;Checkout items in the basket&quot;](9)" classname="AutomationTest.mission.runner.RunnerTest" time="37.756">
+    <system-out><![CDATA[
+@UI
+Scenario: Check item total cost and tax                             # src/test/java/UI-Test.feature:5
+[UI] Opened home page: https://www.saucedemo.com/
+  ✔ Given I am on the home page                                     # AutomationTest.mission.steps.UiSteps.openHomePage()
+[UI] Logged in as: standard_user
+  ✔ And I login in with the following details                       # AutomationTest.mission.steps.UiSteps.loginWithDetails(io.cucumber.datatable.DataTable)
+      | userName      | Password     |
+      | standard_user | secret_sauce |
+[UI] Added to cart: [Sauce Labs Backpack, Sauce Labs Fleece Jacket, Sauce Labs Bolt T-Shirt, Sauce Labs Onesie]
+  ✔ And I add the following items to the basket                     # AutomationTest.mission.steps.UiSteps.addItemsToBasket(io.cucumber.datatable.DataTable)
+      | Sauce Labs Backpack      |
+      | Sauce Labs Fleece Jacket |
+      | Sauce Labs Bolt T-Shirt  |
+      | Sauce Labs Onesie        |
+[UI] Shopping cart count: 4 (expected 4)
+  ✔ And I  should see 4 items added to the shopping cart            # AutomationTest.mission.steps.UiSteps.shoppingCartCountShouldBe(int)
+[UI] Opened shopping cart
+  ✔ And I click on the shopping cart                                # AutomationTest.mission.steps.UiSteps.openShoppingCart()
+[UI] Cart item quantities: [1, 1, 1, 1] (expected each to be 1)
+  ✔ And I verify that the QTY count for each item should be 1       # AutomationTest.mission.steps.UiSteps.quantityForEachItemShouldBe(int)
+[UI] Removed from cart: [Sauce Labs Fleece Jacket]
+  ✔ And I remove the following item:                                # AutomationTest.mission.steps.UiSteps.removeItems(io.cucumber.datatable.DataTable)
+      | Sauce Labs Fleece Jacket |
+[UI] Shopping cart count: 3 (expected 3)
+  ✔ And I  should see 3 items added to the shopping cart            # AutomationTest.mission.steps.UiSteps.shoppingCartCountShouldBe(int)
+[UI] Navigated to checkout information page
+  ✔ And I click on the CHECKOUT button                              # AutomationTest.mission.steps.UiSteps.clickCheckout()
+[UI] Entered First Name: FirstName
+  ✔ And I type "FirstName" for First Name                           # AutomationTest.mission.steps.UiSteps.typeFirstName(java.lang.String)
+[UI] Entered Last Name: LastName
+  ✔ And I type "LastName" for Last Name                             # AutomationTest.mission.steps.UiSteps.typeLastName(java.lang.String)
+[UI] Entered ZIP/Postal Code: EC1A 9JU
+  ✔ And I type "EC1A 9JU" for ZIP/Postal Code                       # AutomationTest.mission.steps.UiSteps.typePostalCode(java.lang.String)
+[UI] Navigated to checkout overview page
+  ✔ When I click on the CONTINUE button                             # AutomationTest.mission.steps.UiSteps.continueToOverview()
+[UI] Listed item prices: [29.99, 15.99, 7.99], expected total: 53.97, displayed total: 53.97
+  ✔ Then Item total will be equal to the total of items on the list # AutomationTest.mission.steps.UiSteps.itemTotalShouldMatchListedItems()
+[UI] Item total: 53.97, expected tax (8%): 4.32, displayed tax: 4.32, expected grand total: 58.29, displayed grand total: 58.29
+  ✔ And a Tax rate of 8 % is applied to the total                   # AutomationTest.mission.steps.UiSteps.taxRateShouldBeApplied(int)
+]]></system-out>
+    <system-err><![CDATA[[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 150.0.7871.46 (resolved driver for Chrome 150)
+[main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\nachi\.cache\selenium\chromedriver\win64\150.0.7871.46\chromedriver.exe
+Jul 04, 2026 1:29:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find an exact match for CDP version 150, returning the closest version; found: 149; Please update to a Selenium version that supports CDP version 150
+]]></system-err>
+  </testcase>
+</testsuite>

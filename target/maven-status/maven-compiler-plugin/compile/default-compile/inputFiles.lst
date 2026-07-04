@@ -1,0 +1,10 @@
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\api\ReqresClient.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\config\ConfigReader.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\driver\BrowserSetup.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\pages\BasePage.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\pages\CartPage.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\pages\CheckoutInformationPage.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\pages\CheckoutOverviewPage.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\pages\InventoryPage.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\pages\LoginPage.java
+E:\d\MissionQaTest-master\src\main\java\AutomationTest\mission\utils\MoneyUtils.java

@@ -1,0 +1,10 @@
+AutomationTest\mission\utils\MoneyUtils.class
+AutomationTest\mission\api\ReqresClient.class
+AutomationTest\mission\pages\CartPage.class
+AutomationTest\mission\pages\BasePage.class
+AutomationTest\mission\config\ConfigReader.class
+AutomationTest\mission\pages\InventoryPage.class
+AutomationTest\mission\pages\LoginPage.class
+AutomationTest\mission\pages\CheckoutInformationPage.class
+AutomationTest\mission\pages\CheckoutOverviewPage.class
+AutomationTest\mission\driver\BrowserSetup.class

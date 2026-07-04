@@ -10,6 +10,24 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;callmenachiss&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/callmenachiss/MissionQaTest.git&quot;,
+    &quot;accountId&quot;: &quot;ddfe7367-fa3b-4185-b315-5cfbd94e107e&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8,
   &quot;fromUser&quot;: false
@@ -19,34 +37,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Cucumber Java.Feature: API-Test.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: CREATE a user.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Check item total cost and tax.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: LOGIN - SUCCESSFUL by a user.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: LOGIN - UNSUCCESSFUL by a user.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Should see LIST USERS of all existing users.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Should see SINGLE USER NOT FOUND error code.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Should see SINGLE USER data.executor&quot;: &quot;Run&quot;,
-    &quot;Cucumber Java.Scenario: Should see the list of users with DELAYED RESPONSE.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;TestNG./Users/nachiyappan.k/Documents/MissionQaTest-master/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.D:/MissionQaTest-master/MissionQaTest-master/testng.xml.executor&quot;: &quot;Run&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/MissionQaTest-master/MissionQaTest-master&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Cucumber Java.Feature: API-Test.executor": "Run",
+    "Cucumber Java.Feature: UI-Test.executor": "Run",
+    "Cucumber Java.Scenario: CREATE a user.executor": "Run",
+    "Cucumber Java.Scenario: Check item total cost and tax.executor": "Run",
+    "Cucumber Java.Scenario: LOGIN - SUCCESSFUL by a user.executor": "Run",
+    "Cucumber Java.Scenario: LOGIN - UNSUCCESSFUL by a user.executor": "Run",
+    "Cucumber Java.Scenario: Should see LIST USERS of all existing users.executor": "Run",
+    "Cucumber Java.Scenario: Should see SINGLE USER NOT FOUND error code.executor": "Run",
+    "Cucumber Java.Scenario: Should see SINGLE USER data.executor": "Run",
+    "Cucumber Java.Scenario: Should see the list of users with DELAYED RESPONSE.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "TestNG./Users/nachiyappan.k/Documents/MissionQaTest-master/testng.xml.executor": "Run",
+    "TestNG.D:/MissionQaTest-master/MissionQaTest-master/testng.xml.executor": "Run",
+    "TestNG.E:/d/MissionQaTest-master/testng.xml.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/d/MissionQaTest-master",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Check item total cost and tax">
+}]]></component>
+  <component name="RunManager" selected="TestNG.E:/d/MissionQaTest-master/testng.xml">
     <configuration name="Feature: API-Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="1.2" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/API-Test.feature" />
@@ -59,6 +82,25 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: UI-Test" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/UI-Test.feature" />
+      <option name="GLUE" value="AutomationTest.mission.steps AutomationTest.mission.hooks" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="MissionQA" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: UI-Test" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,26 +141,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Should see the list of users with DELAYED RESPONSE" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="1.2" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/API-Test.feature" />
-      <option name="GLUE" value="AutomationTest.mission.steps AutomationTest.mission.hooks" />
-      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
-      <module name="MissionQA" />
-      <option name="NAME_FILTER" value="^Should see the list of users with DELAYED RESPONSE$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvmSMFormatter --monochrome --name &quot;^Should see the list of users with DELAYED RESPONSE$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Should see the list of users with DELAYED RESPONSE" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cucumber.api.cli.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,7 +197,7 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="D:/MissionQaTest-master/MissionQaTest-master/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="E:/d/MissionQaTest-master/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MissionQA" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
@@ -187,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.E:/d/MissionQaTest-master/testng.xml" />
         <item itemvalue="Cucumber Java.Scenario: Check item total cost and tax" />
+        <item itemvalue="Cucumber Java.Feature: UI-Test" />
         <item itemvalue="Cucumber Java.Feature: API-Test" />
-        <item itemvalue="TestNG.D:/MissionQaTest-master/MissionQaTest-master/testng.xml" />
         <item itemvalue="Cucumber Java.Scenario: Should see SINGLE USER data" />
-        <item itemvalue="Cucumber Java.Scenario: Should see the list of users with DELAYED RESPONSE" />
       </list>
     </recent_temporary>
   </component>
@@ -207,6 +229,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
